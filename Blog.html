@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Shachini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-brand"><a href="index.html">shachini<span class="dot">.</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">home</a></li>
+      <li><a href="index.html#about" class="nav-link">about</a></li>
+      <li><a href="index.html#skills" class="nav-link">skills</a></li>
+      <li><a href="index.html#projects" class="nav-link">projects</a></li>
+      <li><a href="blog.html" class="nav-link active">blog</a></li>
+      <li><a href="contact.html" class="nav-link">contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="darkToggle" class="toggle-btn" title="Toggle dark mode">
+        <span id="toggleIcon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Blog Header -->
+  <section class="blog-hero">
+    <div class="container">
+      <p class="blog-label">my writing</p>
+      <h1 class="blog-title">thoughts & things I learned</h1>
+      <p class="blog-intro">
+        I started writing on Medium because honestly it helps me understand things better.
+        If I can explain it, I actually get it. These are my notes turned into articles.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="section blog-section">
+    <div class="container">
+      <h2 class="section-title">featured article</h2>
+
+      <div class="article-card featured">
+        <div class="article-meta">
+          <span class="article-tag">Web Design</span>
+          <span class="article-read">~5 min read</span>
+        </div>
+        <h2 class="article-title">
+          Why Responsive Web Design Actually Changed How I Think About Layouts
+        </h2>
+        <p class="article-summary">
+          When I first heard "responsive web design" in class, I thought it just meant making the website
+          look okay on a phone. That was definitely wrong. After spending a few weeks building websites
+          from scratch and testing them on different screen sizes, I realized it's so much more than that.
+          It's about thinking in proportions and flexibility rather than fixed pixels.
+        </p>
+        <p class="article-summary">
+          In this article I talk about what responsive design actually means, how CSS media queries work,
+          why the mobile-first approach makes more sense than I thought, and what I wish I knew before
+          I started. It's written for people like me who are just starting out and need a human explanation,
+          not a textbook one.
+        </p>
+
+        <!-- Topics covered -->
+        <div class="article-topics">
+          <span class="topic-chip">Media Queries</span>
+          <span class="topic-chip">Flexbox</span>
+          <span class="topic-chip">CSS Grid</span>
+          <span class="topic-chip">Mobile-First</span>
+          <span class="topic-chip">Viewport Meta Tag</span>
+        </div>
+
+        <a href="https://medium.com/@its.shachini/when-i-first-heard-the-term-responsive-web-design-in-class-i-thought-it-just-meant-your-website-2a1ee5209e1a" target="_blank" class="btn-primary medium-btn">
+          read on medium ↗
+        </a>
+      </div>
+
+      <!-- What I learned section -->
+      <div class="learned-section">
+        <h3 class="learned-title">topics I've been studying in IN1601</h3>
+        <div class="learned-grid">
+          <div class="learned-card">
+            <span class="learned-icon">🌐</span>
+            <h4>HTML Fundamentals</h4>
+            <p>Semantic tags, document structure, forms, tables, and how browsers actually read HTML.</p>
+          </div>
+          <div class="learned-card">
+            <span class="learned-icon">🎨</span>
+            <h4>CSS Styling</h4>
+            <p>Box model, selectors, specificity, Flexbox, Grid, animations, and transitions.</p>
+          </div>
+          <div class="learned-card">
+            <span class="learned-icon">📱</span>
+            <h4>Responsive Design</h4>
+            <p>Media queries, breakpoints, fluid layouts, and designing for different screen sizes.</p>
+          </div>
+          <div class="learned-card">
+            <span class="learned-icon">⚡</span>
+            <h4>JavaScript Basics</h4>
+            <p>DOM manipulation, event listeners, form validation, and making pages interactive.</p>
+          </div>
+          <div class="learned-card">
+            <span class="learned-icon">🖼️</span>
+            <h4>Multimedia</h4>
+            <p>Images, audio, video embedding, file formats, and optimizing media for the web.</p>
+          </div>
+          <div class="learned-card">
+            <span class="learned-icon">🎯</span>
+            <h4>UI/UX Principles</h4>
+            <p>Color theory, typography, whitespace, user flow, and making things actually usable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Writing goal note -->
+      <div class="blog-note">
+        <p>
+          📝 I plan to keep writing as I learn new things. Writing is honestly the best way I've found
+          to actually understand something it forces you to think clearly.
+          More articles coming as I get deeper into Level 01 modules.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">shachini<span class="dot">.</span></p>
+      <p class="footer-tagline">built with HTML, CSS & JavaScript no frameworks, just learning.</p>
+      <div class="footer-links">
+        <a href="index.html">home</a>
+        <a href="contact.html">contact</a>
+        <a href="https://github.com" target="_blank">github</a>
+        <a href="https://medium.com" target="_blank">medium</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Shachini. Made with ☕ and a lot of Stack Overflow.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Shachini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-brand"><a href="index.html">shachini<span class="dot">.</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">home</a></li>
+      <li><a href="index.html#about" class="nav-link">about</a></li>
+      <li><a href="index.html#skills" class="nav-link">skills</a></li>
+      <li><a href="index.html#projects" class="nav-link">projects</a></li>
+      <li><a href="blog.html" class="nav-link">blog</a></li>
+      <li><a href="contact.html" class="nav-link active">contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="darkToggle" class="toggle-btn" title="Toggle dark mode">
+        <span id="toggleIcon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contact Header -->
+  <section class="contact-hero">
+    <div class="container">
+      <p class="blog-label">get in touch</p>
+      <h1 class="blog-title">say hello 👋</h1>
+      <p class="blog-intro">
+        Whether it's about a project, coursework, or just to talk, I'd love to hear from you.
+        I try to reply within a day or two.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section">
+    <div class="container contact-container">
+
+      <!-- Contact info -->
+      <div class="contact-info">
+        <h3>let's connect</h3>
+        <p>I'm open to collaborating on projects, sharing notes, or just chatting about IT stuff.</p>
+
+        <div class="contact-detail">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>shachini@example.com</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">🏫</span>
+          <div>
+            <strong>University</strong>
+            <p>University of Moratuwa, Faculty of IT</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Sri Lanka</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">✍️</span>
+          <div>
+            <strong>Medium</strong>
+            <a href="https://medium.com/@its.shachini" target="_blank">@Shachini Fernando</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="form-wrap">
+        <!-- Success message (hidden by default, shown after submit) -->
+        <div id="successMsg" class="success-msg" role="alert" aria-live="polite">
+          <span class="success-icon">✅</span>
+          <strong>Message sent!</strong>
+          <p>Thanks for reaching out. I'll get back to you soon.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Kasun Perera"
+              autocomplete="name"
+            />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. kasun@email.com"
+              autocomplete="email"
+            />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What's this about?"
+            />
+            <span class="error-msg" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+            ></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn" id="submitBtn">
+            send message →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">shachini<span class="dot">.</span></p>
+      <p class="footer-tagline">built with HTML, CSS & JavaScript no frameworks, just learning.</p>
+      <div class="footer-links">
+        <a href="index.html">home</a>
+        <a href="blog.html">blog</a>
+        <a href="https://github.com" target="_blank">github</a>
+        <a href="https://medium.com" target="_blank">medium</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Shachini. Made with ☕ and a lot of Stack Overflow.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

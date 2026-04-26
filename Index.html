@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shachini | ITM Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-text">loading<span class="dots">...</span></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-brand">shachini<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">home</a></li>
+      <li><a href="#about" class="nav-link">about</a></li>
+      <li><a href="#skills" class="nav-link">skills</a></li>
+      <li><a href="#education" class="nav-link">education</a></li>
+      <li><a href="#projects" class="nav-link">projects</a></li>
+      <li><a href="blog.html" class="nav-link">blog</a></li>
+      <li><a href="contact.html" class="nav-link">contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- Dark mode toggle -->
+      <button id="darkToggle" class="toggle-btn" title="Toggle dark mode">
+        <span id="toggleIcon">🌙</span>
+      </button>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">hey, i'm</p>
+      <h1 class="hero-name">Shachini</h1>
+      <!-- Typing effect text injected by JS -->
+      <p class="hero-role">I'm a <span id="typed-text"></span><span class="cursor">|</span></p>
+      <p class="hero-intro">
+        First year ITM student at University of Moratuwa. I like building things, breaking them,
+        and figuring out why they broke. Currently learning web design and loving every part of it.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">see my work</a>
+        <a href="contact.html" class="btn-secondary">say hello</a>
+      </div>
+    </div>
+    <!-- Decorative blob shapes -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">about me</h2>
+      <div class="about-grid">
+        <!-- Avatar placeholder -->
+        <div class="about-img-wrap">
+          <div class="avatar-box">
+             <img src="photo.jpg" alt="Shachini's photo" class="avatar-img" />
+          </div>
+          <div class="about-tag">ITM Student 🎓</div>
+        </div>
+        <div class="about-text">
+          <p>
+            Hi! I'm Shachini, studying Information Technology and Management at the Faculty of IT, University of Moratuwa.
+            I'm in my first year and already obsessed with how websites work, how hardware talks to software,
+            and how you can turn a blank screen into something actually useful.
+          </p>
+          <p>
+            I enjoy exploring both the creative side (design, UI) and the technical side (coding, circuits).
+            Right now I'm working through web development and I'm actually surprised by how much I like it.
+          </p>
+          <p>
+            Outside of uni stuff, I experiment with animation software, watch too many YouTube tutorials,
+            and occasionally question my life choices at 2am while debugging.
+          </p>
+          <div class="about-facts">
+            <div class="fact"><span>📍</span> Sri Lanka</div>
+            <div class="fact"><span>🎓</span> UoM, Level 01</div>
+            <div class="fact"><span>💻</span> ITM Undergraduate</div>
+            <div class="fact"><span>☕</span> Tea > Coffee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">skills</h2>
+      <p class="section-sub">stuff I've been learning and using</p>
+
+      <div class="skills-grid">
+        <!-- Skill bars -->
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">HTML</span>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="82"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">CSS</span>
+            <span class="skill-percent">74%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="74"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">C Programming</span>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Digital Systems</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">UI/UX Design Basics</span>
+            <span class="skill-percent">55%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="55"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool cards -->
+      <div class="tools-row">
+        <div class="tool-card">VS Code</div>
+        <div class="tool-card">Git & GitHub</div>
+        <div class="tool-card">Figma (learning)</div>
+        <div class="tool-card">Arduino</div>
+        <div class="tool-card">Synfig</div>
+        <div class="tool-card">VMware Fusion</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title">education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2026 – present</span>
+            <h3>BSc in Information Technology and Management</h3>
+            <p class="timeline-place">University of Moratuwa — Faculty of IT</p>
+            <p class="timeline-desc">
+              Studying core modules including Digital Systems, Mutimedia Technologies & Wed Design, Principles of Management, 
+              Structured Programming, Microcontroller Based Application Development, and Essentials of Mathematics. Currently in Level 01.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – 2024</span>
+            <h3>G.C.E. Advanced Level</h3>
+            <p class="timeline-place">Commerce Stream</p>
+            <p class="timeline-desc">
+              Completed A/Ls with Business Statistics, Accounting & Economics. Built the foundation
+              for understanding the technical side of computing by self studying methods.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Achievements Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">mini projects</h2>
+      <p class="section-sub">things I've built so far small but I'm proud of them</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-tag">HTML + CSS + JS</div>
+          <h3 class="project-title">Burger Shop Website</h3>
+          <p class="project-desc">
+            A fully responsive restaurant website built from scratch for a web design assessment.
+            Includes animations, a menu table, image gallery, and a working JavaScript form validator.
+          </p>
+          <div class="project-links">
+            <span class="project-status">✅ Completed</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">HTML + CSS + JS</div>
+          <h3 class="project-title">Bookshop Website</h3>
+          <p class="project-desc">
+            An online bookshop with category filtering, a featured books section, and responsive grid layout.
+            Made to meet specific academic rubric requirements.
+          </p>
+          <div class="project-links">
+            <span class="project-status">✅ Completed</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">ESP32 + Hardware</div>
+          <h3 class="project-title">Underwater Research Robot (Concept)</h3>
+          <p class="project-desc">
+            A team proposal for an ESP32-powered robot designed for well inspection and fish pond monitoring.
+            Worked on the system design and hardware component selection.
+          </p>
+          <div class="project-links">
+            <span class="project-status">📋 Proposal Stage</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Group Project</div>
+          <h3 class="project-title">NexRoom — Smart Room System</h3>
+          <p class="project-desc">
+            Part of a five-person team that proposed a smart room automation system with sensor-based
+            environment control. Focused on the intro script and presentation delivery.
+          </p>
+          <div class="project-links">
+            <span class="project-status">🎤 Presented</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">shachini<span class="dot">.</span></p>
+      <p class="footer-tagline">built with HTML, CSS & JavaScript no frameworks, just learning.</p>
+      <div class="footer-links">
+        <a href="blog.html">blog</a>
+        <a href="contact.html">contact</a>
+        <a href="https://github.com" target="_blank">github</a>
+        <a href="https://medium.com" target="_blank">medium</a>
+      </div>
+      <!-- Year auto updates via JS -->
+      <p class="footer-copy">© <span id="year"></span> Shachini. Made with ☕ and a lot of Stack Overflow.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollTop" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
